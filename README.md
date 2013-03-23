@@ -1,7 +1,7 @@
 # Notes on Network Security
 
-### You can browse the deployed version of this repository at
-[blog.dontwakethecat.net/network_security_notes]
+### You can browse the deployed version of this repository at [blog.dontwakethecat.net/network_security_notes]()
+
 This repository contains the source of notes taken about the Network Security
 class held by prof. Nicola Laurenti at Università di Padova during 2nd semester
 of A.A. 2012/13.
