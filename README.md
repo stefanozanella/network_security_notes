@@ -48,4 +48,3 @@ transposition, linear)
 generation structure, description of round function
 * Classification of attacks: on the message/on the key, known/chosen
   plaintext/ciphertext
-
