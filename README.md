@@ -1,5 +1,7 @@
 # Notes on Network Security
 
+### You can browse the deployed version of this repository at
+[blog.dontwakethecat.net/network_security_notes]
 This repository contains the source of notes taken about the Network Security
 class held by prof. Nicola Laurenti at Università di Padova during 2nd semester
 of A.A. 2012/13.
@@ -7,19 +9,6 @@ of A.A. 2012/13.
 Due to the high amount of math involved in the notes, they're written in the
 superset of Markdown provided by the 
 [kramdown gem](http://kramdown.rubyforge.org/).
-
-## Source conversion
-You can convert the notes to all available outputs formats by simply installing
-the `kramdown` gem:
-
-```
-gem install kramdown
-```
-or, if you prefer, there's a `Gemfile` available:
-
-```
-bundle install
-```
 
 ## References
 _(cite books references here)_
