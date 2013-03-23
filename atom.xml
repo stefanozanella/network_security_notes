@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Networks Security Notes]]></title>
   <link href="http://stefanozanella.github.com/network_security_notes/atom.xml" rel="self"/>
   <link href="http://stefanozanella.github.com/network_security_notes/"/>
-  <updated>2013-03-23T19:01:49+01:00</updated>
+  <updated>2013-03-23T19:35:19+01:00</updated>
   <id>http://stefanozanella.github.com/network_security_notes/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Stefano Zanella]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
