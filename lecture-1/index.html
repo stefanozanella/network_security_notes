@@ -195,6 +195,72 @@ of the data processing systems and the information transfers of an
 organization.</li>
 </ul>
 
+<h3 id="attacks">Attacks</h3>
+<p>We can distinguish between two main categories:</p>
+
+<ul>
+  <li><strong>Passive</strong> attacks: attempt to learn or make use of information from the
+but does not affect system resources.</li>
+  <li><strong>Active</strong> attacks: attempt to alter the system resources or affect their
+operation.</li>
+</ul>
+
+<p>Digging into these categories, we can find specific forms of attacks. Some
+examples are:</p>
+
+<ul>
+  <li>eavesdropping (against confidentiality)</li>
+  <li>modification (against integrity)</li>
+  <li>denial of service (against availablity)</li>
+  <li>forgery (against accountability)</li>
+  <li>repudiation (against accountability, can be applied to both sender and
+receiver)</li>
+  <li>profiling / fingerprinting (against privacy)</li>
+</ul>
+
+<h3 id="services">Services</h3>
+<p>A security service is a service that is <em>provided by a protocol layer of
+communicating open systems and ensures adequate security of the systems or of
+data transfers</em>. A security service is provided to give a <em>specific kind of
+protection to system resources; security services implement security policies
+and are implemented by security mechanisms</em>.</p>
+
+<p>The OSI Security Architecture defines the following taxonomy of security
+services:</p>
+
+<ul>
+  <li>Authentication
+    <ul>
+      <li>Peer entity authentication</li>
+      <li>Data origin authentication</li>
+    </ul>
+  </li>
+  <li>Access control</li>
+  <li>Data confidentiality
+    <ul>
+      <li>Connection confidentiality</li>
+      <li>Connectionless confidentiality</li>
+      <li>Selective-field confidentiality</li>
+      <li>Traffic-flow confidentiality</li>
+    </ul>
+  </li>
+  <li>Data integrity
+    <ul>
+      <li>Connection integrity with/without recovery</li>
+      <li>Selective-field connection integrity</li>
+      <li>Connectionless integrity</li>
+      <li>Selective-field connectionless integrity</li>
+    </ul>
+  </li>
+  <li>Nonrepudiation
+    <ul>
+      <li>Nonrepudiation of the origin</li>
+      <li>Nonrepudiation of the destination</li>
+    </ul>
+  </li>
+  <li>Availability service</li>
+</ul>
+
   
     <footer>
       
