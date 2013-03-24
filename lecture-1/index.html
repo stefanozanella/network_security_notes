@@ -261,6 +261,47 @@ services:</p>
   <li>Availability service</li>
 </ul>
 
+<h3 id="mechanisms">Mechanisms</h3>
+<p>X.800 also defines a taxonomy of security mechanisms, which can be divided into
+two main categories: those that are implemented in a specific protocol layer,
+such as TCP of an application-layer protocol, and those that are not specific
+to any particular protocol layer or security service. Each mechanisms can then
+be used by one or more security services to fullfil their goals. The taxonomy
+is as follows:</p>
+
+<ul>
+  <li><strong>Specific security mechanisms</strong>
+    <ul>
+      <li><em>Encipherment</em>: use of mathematical algorithms to transform data into a
+form that is not readily intelligible.</li>
+      <li><em>Digital Signature</em>: data appended to a data unit (or a transformation of
+it) that allows a recipient to prove the source and integrity of data</li>
+      <li><em>Access Control</em></li>
+      <li><em>Data Integrity</em></li>
+      <li><em>Authentication Exchange</em>: ensuring the identity of an entity by exchanging
+information with it</li>
+      <li><em>Traffic Padding</em>: insertion of bits into gaps in a data stream to mitigate
+traffic analysis attempts</li>
+      <li><em>Routing Control</em>: in particular, ability to change a route when a security
+breach is detected/suspected</li>
+      <li><em>Notarization</em>: use of a third party to assure certain properties of a data
+exchange</li>
+    </ul>
+  </li>
+  <li><strong>Pervasive security mechanisms</strong>
+    <ul>
+      <li><em>Trusted Functionality</em>: which is, correct with respect to some criteria</li>
+      <li><em>Security Label</em>: marking bound of a resource that names the security
+attibutes of that resource</li>
+      <li><em>Event Detection</em></li>
+      <li><em>Security Audit Trail</em>: data collected to facilitate a security audit</li>
+      <li><em>Security Recovery</em>: deals with requests from mechanisms, such as event
+handling and management functions, and takes recovery actions</li>
+    </ul>
+  </li>
+</ul>
+
+
   
     <footer>
       
