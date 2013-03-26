@@ -345,7 +345,13 @@ The key source “picks” a key <script type="math/tex"> k </script> among a se
 the key is then <strong>transmitted to the receiving end by some means, supposedly 
 not interceptible</strong>.<br />
 The message source produces a message <script type="math/tex"> m </script> which is then enciphered using
-the key <script type="math/tex"> k </script>, producing a cryptogram <script type="math/tex"> x </script>.</p>
+the key <script type="math/tex"> k </script>, producing a cryptogram <script type="math/tex"> x </script>.<br />
+The cryptogram is then sent to the receiving end by a possibly interceptible
+means; the receiving end combines the cryptogram <script type="math/tex"> x </script> and key <script type="math/tex"> k </script> in a
+decipherer block that recovers the original message <script type="math/tex"> m </script>.</p>
+
+<p><img src="../images/general_secrecy_system.jpg" alt="Schematic of a general secrecy system" title="Schematic of a general secrecy system" /></p>
+
 
   
     <footer>
