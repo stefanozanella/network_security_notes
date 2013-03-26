@@ -385,6 +385,21 @@ transformation <script type="math/tex"> T_i </script> having an associated proba
 <p>The set of possible messages will be called the <em>message space</em>, while the set
 of possible cryptograms will be called <em>cryptogram space</em>.</p>
 
+<p>An assumption made to make the problem mathematically tractable is that <em>the
+enemy knows the system being used</em>. That is, he knows the family of
+transformations <script type="math/tex"> T_i </script> and the probabilities of choosing various keys. This
+assumption, while it could seem unrealistic, it is weaker than it appears
+since, for example, a key could be splitted in two part, the first determining
+which cipher the encipherer will use and the second acting as the actual key
+for that cipher. Also, the assumption is pessimistic and hence safe, but also
+realistic in the long run (since one can expect his system to be found out
+eventually at some point in time).</p>
+
+<p>Also, a note worth taking regards the way encipherer is represented. It
+consists of a <em>set of transformations</em> and not of a single transformation
+because if we look at the system from the enemy side, the “might have been”
+keys are as important as the actual one, since he doesn’t know which one is
+actually used at the moment of the cryptanalysis.</p>
 
   
     <footer>
