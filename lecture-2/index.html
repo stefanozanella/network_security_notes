@@ -356,7 +356,27 @@ decipherer block that recovers the original message <script type="math/tex"> m <
 so that:
   $$
   E = T_im
-  $$</p>
+  $$
+Note that the index <script type="math/tex"> i </script> corresponds to the particular key being used.
+Shannon makes the assumption that only a finite number of possible keys exists,
+and that each one has an associated probability <script type="math/tex"> p_i </script>. This way, the key
+source is represented as a <em>statistical process</em> which chooses one from the set
+of transformations <script type="math/tex"> T_1,T_2,...,T_m </script> with probabilities 
+<script type="math/tex"> p_1,p_2,...,p_m </script>.<br />
+At the same time, he assumes a finite number of possible messages $$
+m<em>1,m</em>2,…,m_n $$ with associated <em>a priori</em> probabilities 
+<script type="math/tex"> q_1,q_2,...,q_n </script>.<br />
+With this model, to decipher the message, each transformation <script type="math/tex"> T_i </script> must
+have a unique inverse <script type="math/tex"> T^{-1}_i </script> (such that <script type="math/tex"> T_iT^{-1}_i=I </script>). This way,
+we can associate the <strong>decipherer</strong> to the inverse transformation, so that:
+  $$
+  M = T^{-1}_ie
+  $$
+So, we arrive at the following definition:<br />
+&gt; A <strong>secrecy system</strong> is a family of uniquely reversible transformations 
+&gt; <script type="math/tex"> t_i </script> of a set of possible messages into a set of cryptograms, the
+&gt; transformation <script type="math/tex"> T_i </script> having an associated probability <script type="math/tex"> p_i </script>.</p>
+
 
   
     <footer>
