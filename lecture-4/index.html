@@ -198,7 +198,7 @@ opponent is either to recover <script type="math/tex"> u </script> by generating
 
 <p><img src="../images/symmetric_cryptosystem.jpg" alt="General model of a cryptosystem" title="General model of a cryptosystem" /></p>
 
-<p><em>Cryptographic system</em> are characterized along three independent dimensions:</p>
+<p><em>Cryptographic systems</em> are characterized along three independent dimensions:</p>
 
 <ol>
   <li>Type of operations used for transforming plaintext to ciphertext:
@@ -208,6 +208,44 @@ involve multiple stages of substitutions and transpsitions (<em>product systems<
 encryption)</em> or <em>asymmetric (two-key, public-key)</em> encryption</li>
   <li>How the plaintext is processed: i.e. <em>block cipher</em> or <em>stream cipher</em></li>
 </ol>
+
+<p>The kind of attacks that can be performed are based on two distinct general
+approaches:</p>
+
+<ul>
+  <li><strong>Cryptanalysis</strong>: rely on the characteristics of the algorithm plus some
+additional knowledge provided in form of general knowledge of the plaintext
+or even some sample plaintext-ciphertext pairs.</li>
+  <li><strong>Brute-force attack</strong>: means trying all the possible keys on a piece of
+ciphertext until an intelligible text is decrypted. On average, half of the
+key space must be explored to achieve success.</li>
+</ul>
+
+<p>That said, cryptanalysis can be further classified depending on the specific
+knowledge the attacker can rely on:
+|——————+————————-|
+|  Type of attack  |  Known to cryptanalyst  |
+|:—————–|:————————|
+| Ciphertext Only | * Encryption algorithm   |
+|                 | * Ciphertext             |
+|:—————–|:————————|
+| Known Plaintext | * Encryption algorithm   |
+|                 | * Ciphertext             |
+|                 | * One or more plaintext–ciphertext pairs formed with the secret key |
+|:—————–|:————————|
+| Chosen Plaintext | * Encryption algorithm  |
+|                 | * Ciphertext             |
+|                 | * Plaintext message chosen by cryptanalyst, together with its corresponding ciphertext generated with the secret key |
+|:—————–|:————————|
+| Chosen Ciphertext | * Encryption algorithm |
+|                 | * Ciphertext             |
+|                 | * Ciphertext chosen by cryptanalyst, together with its corresponding decrypted plaintext generated with the secret key |
+|:—————–|:————————|
+| Chosen Text | * Encryption algorithm |
+|                 | * Ciphertext             |
+|                 | * Ciphertext chosen by cryptanalyst, together with its corresponding decrypted plaintext generated with the secret key |
+|                 | * Plaintext chosen by cryptanalyst, together with its corresponding ciphertext generated with the secret key |
+|——————+————————-|</p>
 
   
     <footer>
