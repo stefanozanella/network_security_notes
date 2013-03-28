@@ -170,11 +170,31 @@ schemes feasible for widespread adoption.</p>
 <script type="math/tex; mode=display"> u = [u_1, u_2, ..., u_M], u_i \in \mathcal{A}_u </script>
 
 <p>(usually with <script type="math/tex"> \mathcal{A}_u = \{0, 1\} </script>).<br />
-At the same time, a key</p>
+At the same time, a <em>key</em></p>
 
 <script type="math/tex; mode=display"> k = [k_1, k_2, ..., k_J], k_i \in \mathcal{A}_k </script>
 
-<p>is generated (usually with <script type="math/tex"> \mathcal{A}_k = \{0, 1\} </script> as well).</p>
+<p>is generated (usually with <script type="math/tex"> \mathcal{A}_k = \{0, 1\} </script> as well).<br />
+The key is either produced at the source and transferred in a secure manner to
+the receiver, or produced by a third-party and then securely delivered to both
+source and destination.<br />
+The <em>encryption algorithm</em> takes <script type="math/tex"> u </script> and <script type="math/tex"> k </script> as inputs and produces the
+<em>ciphertext</em> </p>
+
+<script type="math/tex; mode=display"> x = [x_1, x_2, ..., x_N], x+i \in \mathcal{A}_x </script>
+
+<p>(again, usually with <script type="math/tex"> \mathcal{A}_x = \{0, 1\} </script>). So we can write:</p>
+
+<script type="math/tex; mode=display"> x = E(u, k) </script>
+
+<p>The receiver possessing the key is able to invert the transformation:</p>
+
+<script type="math/tex; mode=display"> u = D(k, x) </script>
+
+<p>It’s assumed that an opponent knows both <script type="math/tex"> E </script> and <script type="math/tex"> D </script>, and that she can
+observe <script type="math/tex"> x </script> without having access to <script type="math/tex"> k </script> or <script type="math/tex"> u </script>. Focus of the
+opponent is either to recover <script type="math/tex"> u </script> by generating a plaintext estimate 
+<script type="math/tex"> \hat{x} </script>, or to recover <script type="math/tex"> k </script> by generating an estimate <script type="math/tex"> \hat{k} </script>.</p>
 
   
     <footer>
